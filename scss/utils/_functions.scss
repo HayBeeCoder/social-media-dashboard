@@ -1,0 +1,23 @@
+@function font-weight($wt){
+    @return map-get($font-weight, $wt);
+};
+
+@function font-size($size){
+    @return map-get($font-size , $size); 
+};
+
+@function dark-theme($prop){
+    @return map-get($dark-theme,$prop);
+};
+
+@function light-theme($prop){
+    @return map-get($light-theme,$prop);
+};
+
+
+@function brand-clr($brand){
+    @return map-get($brand-clr,$brand);
+};
+
+
+

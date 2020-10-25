@@ -1,0 +1,47 @@
+.header{
+    @include transition-ease;
+    padding: 25px 0 95px;
+    background-color: light-theme(top_bg-pattern);
+     p { 
+        display: inline-block;
+        font-weight: font-weight(bold);
+        color: light-theme(text);
+        letter-spacing: 3;
+    }
+    .container{
+        @include query(750px){
+        @include flex(row , space-between);
+        flex: 1;
+        }
+    }
+    &__heading{
+        padding-bottom: 20px ;
+        border-bottom: 0.5px solid map-get($map: $light-theme, $key: toggle);
+         width: 100%;
+         @include query(750px){
+             border-bottom: 0;
+             padding-bottom: 0;
+             flex: 1;
+         }
+    }
+         &__followers{
+        font-size: font-size(lg); 
+    }
+    &__toggle{
+        @include flex(row,space-between);
+        padding-top: 20px;
+        @include query(750px){
+            padding-top: 0;
+           justify-content: flex-end;
+           gap: 10px;
+        //    flex: 1;
+        }
+    }
+}
+
+// .cards{
+//     padding: 20px 0;
+//     .card{
+//         background: 
+//     }}
+

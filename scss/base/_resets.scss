@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+span{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+body{
+    @include transition-ease;
+    font-family: $font-family;
+    font-weight: font-weight(bold);
+    font-size: font-size(nml);
+    letter-spacing: 0.42px; 
+    background-color: set-bg-clr(dark-theme(bg),light-theme(bg))
+}
+
+main{
+    margin-top: -50px;
+}
+
+
+
+h1,h2{
+     font-size:  font-size(xlg);
+    margin: 4px 0;
+    font-weight: font-weight(bold)
+}
+

@@ -1,0 +1,15 @@
+.dragon{
+    @include transition-ease;
+    background: dark-theme(bg);
+    background-size: 10vh;
+    color: dark-theme(text1);
+    header {
+        @include transition-ease;
+      background-color: dark-theme(top_bg-pattern);
+    }
+    .card{
+      background-color: dark-theme(card_bg);
+      color: dark-theme(text1)
+    }
+
+}

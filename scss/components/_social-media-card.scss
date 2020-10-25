@@ -1,0 +1,87 @@
+.card{
+    width: 100%;
+     max-width: 380px;
+    margin: 0 auto 20px;
+    background-color: light-theme(card_bg);
+    padding: 35px 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    @include flex(column,center,25px);
+    text-align: center;
+    &__username{
+        @include flex(row,center,9px);
+       a{
+           display: grid;
+       }
+    }
+    &__followers{
+        p:first-of-type{
+            font-weight: font-weight(bold);
+         font-size: font-size(xxlg);
+           
+        }
+        p:last-of-type{
+            font-weight: font-weight(regular);
+            text-transform: uppercase;
+            letter-spacing: 7px;
+        }
+    }
+    &__count{
+        @include flex(row,center,5px,center);
+        font-size: font-size(sm);
+        font-weight: font-weight(bold);
+
+    }
+    &__arrow{
+      display: grid;
+    }
+    &__increase{
+        &--green{
+            color:  $lime-green;
+        }
+        &--red{
+            color:  $bright-red;
+        }
+    }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: red;
+        }
+
+        @media (min-width: 750px){
+            // width: fit-content;
+            max-width: initial;         
+        }
+ 
+}
+
+.card--facebook{
+    &::before{
+      @include border-clr(brand-clr(fb));
+    }
+}
+
+.card--twitter{
+    &::before{
+      @include border-clr(brand-clr(tw));
+    }
+}
+
+.card--instagram{
+    &::before{
+      @include border-clr(brand-clr(ig));
+    }
+}
+
+.card--youtube{
+    &::before{
+      @include border-clr(brand-clr(yt));
+    }
+}
