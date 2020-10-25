@@ -36,7 +36,7 @@ a {
 }
 
 body {
-  transition: all 0.45s ease;
+  transition: all 0.29s ease;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -79,7 +79,7 @@ h1, h2 {
   width: 18px;
   right: 4px;
   top: 4px;
-  transition: all 0.45s ease;
+  transition: all 0.29s ease;
 }
 
 .toggle:checked {
@@ -129,6 +129,7 @@ h1, h2 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 7px;
+  font-size: 1.3rem;
 }
 
 .card__count {
@@ -186,12 +187,17 @@ h1, h2 {
 }
 
 .header {
-  transition: all 0.45s ease;
+  transition: all 0.29s ease;
   padding: 25px 0 95px;
   background-color: #f5f7ff;
 }
 
+.header h1 {
+  transition: all 0.29s ease;
+}
+
 .header p {
+  transition: all 0.29s ease;
   display: inline-block;
   font-weight: 700;
   color: #63687e;
@@ -224,7 +230,7 @@ h1, h2 {
 }
 
 .header__followers {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 .header__toggle {
@@ -253,18 +259,27 @@ h1, h2 {
 }
 
 .dragon {
-  transition: all 0.45s ease;
+  transition: all 0.29s ease;
   background: #1e202a;
   background-size: 10vh;
   color: white;
 }
 
+.dragon h1 {
+  transition: all 0.29s ease;
+}
+
+.dragon p {
+  transition: all 0.29s ease;
+}
+
 .dragon header {
-  transition: all 0.45s ease;
+  transition: all 0.29s ease;
   background-color: #1f212e;
 }
 
 .dragon .card {
+  transition: all 0.29s ease;
   background-color: #252a41;
   color: white;
 }

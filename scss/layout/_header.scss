@@ -2,7 +2,11 @@
     @include transition-ease;
     padding: 25px 0 95px;
     background-color: light-theme(top_bg-pattern);
+    h1{
+        @include transition-ease;
+    }
      p { 
+        @include transition-ease;
         display: inline-block;
         font-weight: font-weight(bold);
         color: light-theme(text);
