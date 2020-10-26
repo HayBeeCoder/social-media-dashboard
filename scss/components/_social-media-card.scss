@@ -1,13 +1,10 @@
+
 .card{
-    width: 100%;
-     max-width: 380px;
-    margin: 0 auto 20px;
-    background-color: light-theme(card_bg);
-    padding: 35px 0;
-    border-radius: 5px;
+    @extend %card;
+    @include increment-today;
+    @include flex(column,center,25px);
     position: relative;
     overflow: hidden;
-    @include flex(column,center,25px);
     text-align: center;
     &__username{
         @include flex(row,center,9px);
@@ -28,24 +25,7 @@
             font-size: font-size(lg);
         }
     }
-    &__count{
-        @include flex(row,center,5px,center);
-        font-size: font-size(sm);
-        font-weight: font-weight(bold);
-
-    }
-    &__arrow{
-      display: grid;
-    }
-    &__increase{
-        &--green{
-            color:  $lime-green;
-        }
-        &--red{
-            color:  $bright-red;
-        }
-    }
-
+   
         &::before{
             content: '';
             position: absolute;
@@ -55,12 +35,6 @@
             height: 5px;
             background-color: red;
         }
-
-        @media (min-width: 750px){
-            // width: fit-content;
-            max-width: initial;         
-        }
- 
 }
 
 .card--facebook{

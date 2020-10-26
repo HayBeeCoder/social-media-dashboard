@@ -1,0 +1,28 @@
+.overview{
+    @extend %card;
+    @include increment-today;
+    padding: 28px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2, 1fr);
+      align-items: flex-end;
+    justify-items: left;
+    height: 140px;
+   
+    &__views{
+        font-size: font-size(xlg1);      
+        line-height: 0.8;
+    }
+    p:first-of-type{
+        font-weight: font-weight(bold);
+        align-self: flex-start;
+    
+    }
+    &__media{
+        align-self: flex-start;
+    }
+    &__media,span:last-of-type{
+        justify-self: right;
+    }
+  
+}

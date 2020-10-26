@@ -1,16 +1,18 @@
 .cards__container{
-// @include flex(row,initial,20px,initial);
-// display: flex;
-// flex: 1;
-// justify-content: space-between;
-// flex: 1fr 1fr 1fr 1fr;
-// remove this for laptop responsiveness
-// flex-wrap: wrap;
-@media (min-width: 750px){
-    display: flex;
-//  flex-basis: 100px;
-flex: 1 300px;
-gap: 1.2%;
-// flex-wrap: wrap;
-}
+    display: grid; 
+    gap: 10px;
+    @include query($ipad){
+    
+        grid-template-columns: repeat(2 , 1fr);
+         gap: 10px;
+    
+    }
+    @include query($laptop){
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; 
+    }
+    @include query($laptop2){
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px; 
+    }
 }

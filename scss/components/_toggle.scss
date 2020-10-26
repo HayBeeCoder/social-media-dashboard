@@ -1,4 +1,5 @@
 .toggle{
+    @include transition-ease;
     @extend %toggle;
     @include toggle-size(18px,4px);
     @include toggle-clr(light-theme(toggle));
@@ -9,12 +10,4 @@
         @include slider-pos(4px);
         @include transition-ease;
      }
-       &:checked{
-         @include toggle-clr(dark-theme(toggle));
-         &::after{
-            @include toggle-clr(dark-theme(bg));
-            @include slider-pos--active(18px,4px);
-         }
-     }
-
  }

@@ -1,22 +1,33 @@
 .dragon{
-    @include transition-ease;
+     @include transition-ease;
     background: dark-theme(bg);
     background-size: 10vh;
     color: dark-theme(text1);
-    h1{
-      @include transition-ease;
-    }
-    p{
-      @include transition-ease;
-    }
+   
     header {
-        @include transition-ease;
-      background-color: dark-theme(top_bg-pattern);
+       background-color: dark-theme(top_bg-pattern);
     }
     .card{
       @include transition-ease;
       background-color: dark-theme(card_bg);
       color: dark-theme(text1)
     }
-
+    .overview{
+      @include transition-ease;
+      background-color: dark-theme(card_bg);
+      color: dark-theme(text1);
+ 
+    }
+    .toggle{
+      &:checked{
+        @include transition-ease;
+         @include toggle-clr(dark-theme(toggle));
+        &::after{
+          @include transition-ease;
+ 
+          @include toggle-clr(dark-theme(bg));
+         }
+      }
+     
+    }
 }
