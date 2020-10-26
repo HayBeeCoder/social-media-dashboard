@@ -1,29 +1,28 @@
-@mixin increment-today{
-    &__count{
-             @include flex(row,center,5px,center);
-             font-size: font-size(sm);
-             font-weight: font-weight(bold);
-    } 
-    &__count{
-        @include flex(row,center,5px,center);
-       font-size: font-size(sm);
-       font-weight: font-weight(bold);
-
-   }
-   &__arrow{
-     display: grid;
-   }
-   &__increase{
-       &--green{
-           color:  $lime-green;
-       }
-   &--red{
-       color:  $bright-red;
-       }
+@mixin increment-today {
+    &__count {
+        @include flex(row, center, 5px, center);
+        font-size: font-size(sm);
+        font-weight: font-weight(bold);
+    }
+    &__count {
+        @include flex(row, center, 5px, center);
+        font-size: font-size(sm);
+        font-weight: font-weight(bold);
+    }
+    &__arrow {
+        display: grid;
+    }
+    &__increase {
+        &--green {
+            color: $lime-green;
+        }
+        &--red {
+            color: $bright-red;
+        }
     }
 }
 
-@mixin flex($direction ,$justify: center ,  $gap: 0,$align: center) {
+@mixin flex($direction, $justify: center, $gap: 0, $align: center) {
     display: flex;
     justify-content: $justify;
     flex-direction: $direction;
@@ -31,60 +30,58 @@
     align-items: $align;
 }
 
-@mixin border-clr($clr){
- background: $clr;
+@mixin border-clr($clr) {
+    background: $clr;
 }
 
-
-@mixin active_toggle--dimension($height,$offset){
+@mixin active_toggle--dimension($height, $offset) {
     $offset2: 2 * $offset;
     $offset3: 3 * $offset;
     height: $height + $offset2;
     width: 2 * ($height + $offset2);
     border-radius: 2 * ($height+$offset);
-   &::after{
+    &::after {
         height: $height;
         width: $height;
-      
     }
-    &:checked::after{
+    &:checked::after {
         left: $offset3+$height;
         top: $offset;
     }
 }
 
-@mixin toggle-size($height,$offset){
+@mixin toggle-size($height, $offset) {
     $offset2: 2 * $offset;
     height: $height + $offset2;
     width: 2 * ($height + $offset2);
     border-radius: 2 * ($height+$offset);
-  
 }
 
-@mixin slider-size($height){
+@mixin slider-size($height) {
     height: $height;
-     width: $height;
- }
+    width: $height;
+}
 
-@mixin slider-pos($offset){
+@mixin slider-pos($offset) {
     right: $offset;
     top: $offset;
 }
 
-@mixin slider-pos--active($height,$offset){
+@mixin slider-pos--active($height, $offset) {
     right: 3*$offset + $height;
 }
 
-@mixin toggle-clr($clr){
+@mixin toggle-clr($clr) {
     background: $clr;
 }
-@mixin transition-ease{
-    transition: all 0.29s ease;
+
+@mixin transition-ease {
+    transition: background-color 0.29s ease;
 }
 
-@mixin query($value){
-    @media (min-width: $value){
+@mixin query($value) {
+    @media (min-width: $value) {
         @content
-    };
+    }
+    ;
 }
-

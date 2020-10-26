@@ -1,13 +1,12 @@
-.toggle{
+.toggle {
     @include transition-ease;
     @extend %toggle;
-    @include toggle-size(18px,4px);
+    @include toggle-size($toggle-height, $toggle-offset);
     @include toggle-clr(light-theme(toggle));
-   
-    &::after{
+    &::after {
         @include toggle-clr(light-theme(bg));
-        @include slider-size(18px);
-        @include slider-pos(4px);
+        @include slider-size($toggle-height);
+        @include slider-pos($toggle-offset);
         @include transition-ease;
-     }
- }
+    }
+}

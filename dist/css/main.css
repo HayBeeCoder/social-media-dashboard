@@ -37,7 +37,7 @@ a {
 }
 
 body {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -81,7 +81,7 @@ h1, h2 {
 }
 
 .toggle {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   height: 26px;
   width: 52px;
   border-radius: 44px;
@@ -94,7 +94,7 @@ h1, h2 {
   width: 18px;
   right: 4px;
   top: 4px;
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
 }
 
 .card {
@@ -251,7 +251,7 @@ h1, h2 {
 }
 
 .header {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   padding: 25px 0 95px;
   background-color: #f5f7ff;
 }
@@ -340,7 +340,7 @@ h1, h2 {
 }
 
 .dragon {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   background: #1e202a;
   background-size: 10vh;
   color: white;
@@ -351,24 +351,25 @@ h1, h2 {
 }
 
 .dragon .card {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   background-color: #252a41;
   color: white;
 }
 
 .dragon .overview {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   background-color: #252a41;
   color: white;
 }
 
 .dragon .toggle:checked {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
   background: linear-gradient(to right, #378fe6, #3eda82);
 }
 
 .dragon .toggle:checked::after {
-  transition: all 0.29s ease;
+  transition: background-color 0.29s ease;
+  right: 30px;
   background: #1e202a;
 }
 /*# sourceMappingURL=main.css.map */
