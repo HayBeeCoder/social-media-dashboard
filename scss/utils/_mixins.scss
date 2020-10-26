@@ -76,7 +76,7 @@
 }
 
 @mixin transition-ease {
-    transition: background-color 0.29s ease;
+    transition: background-color 0.29s ease, right 0.29s ease;
 }
 
 @mixin query($value) {
