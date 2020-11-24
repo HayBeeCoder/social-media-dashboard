@@ -1,5 +1,5 @@
 .header {
-    @include transition-ease;
+    @include  transition-ease;
     padding: 25px 0 95px;
     background-color: light-theme(top_bg-pattern);
     p {
